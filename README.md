@@ -1,20 +1,17 @@
 > :warning: **This plugin will stop receiving feature requests. I will only spend time for important bug fixes**. Google moved from analytics.js to its new gtag.js library and I've created a new plugin called [vue-gtag](https://github.com/MatteoGabriele/vue-gtag). I suggest you to start using that one if you are about to create a new project.
 
+This plugin is a Vue3 version of https://github.com/MatteoGabriele/vue-analytics.
+Some functionality is removed, but using `this.$ga.event` and `this.$ga.page` should work.
+
 <p align="center">
   <img width="180" src="http://i.imgur.com/whvHAT6.png">
   <br>
   <br>
   <a href="https://npm.im/vue-analytics">
-    <img src="https://badgen.net/npm/v/vue-analytics">
+    <img src="https://badgen.net/npm/v/vue3-analytics">
   </a>
   <a href="https://npm.im/vue-analytics">
-    <img src="https://badgen.net/npm/dm/vue-analytics">
-  </a>
-  <a href="https://travis-ci.org/MatteoGabriele/vue-analytics">
-    <img src="https://badgen.net/travis/MatteoGabriele/vue-analytics/master">
-  </a>
-  <a href="https://bundlephobia.com/result?p=vue-analytics">
-    <img src="https://badgen.net/bundlephobia/minzip/vue-analytics">
+    <img src="https://badgen.net/npm/dm/vue3-analytics">
   </a>
 </p>
 
@@ -40,7 +37,7 @@ For example:
 
 ## Requirements
 
-Vue ^2.0.0
+Vue ^3.0.0
 
 ## Articles
 

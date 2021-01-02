@@ -6,14 +6,12 @@ import ga from './directives/ga'
 import { autotracking as expectionAutotracking } from './lib/exception'
 import vuexMiddleware from './vuex-middleware'
 
-export default function install (Vue, options = {}) {
-  update({ ...options, $vue: Vue })
+export default function install (app, options = {}) {
+  update({ ...options, $vue: app })
 
-  Vue.directive('ga', ga)
-  Vue.prototype.$ga = Vue.$ga = lib
+  app.config.globalProperties.$ga = lib;
 
-  expectionAutotracking(Vue)
-  bootstrap()
+  bootstrap();
 }
 
 // Vuex middleware
